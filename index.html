@@ -1,43 +1,9 @@
 <html>
-
-<head>
-    <script>
-        function createXMLHttpRequest() {
-            if (window.XMLHttpRequest) {
-                XMLHttpR = new XMLHttpRequest();
-            } else if (window.ActiveXObject) {
-                try {
-                    XMLHttpR = new ActiveXObject("Msxml2.XMLHTTP");
-                } catch (e) {
-                    try {
-                        XMLHttpR = new ActiveXObject("Microsoft.XMLHTTP");
-                    } catch (e) {
-                    }
-                }
-            }
-        }
-        function sendRequest(url) {
-            createXMLHttpRequest();
-            XMLHttpR.open("GET", url, true);
-            XMLHttpR.setRequestHeader("Content-Type", "text/html;charset=utf-8");
-            XMLHttpR.onreadystatechange = processResponse;
-            XMLHttpR.send(null);
-        }
-        function processResponse() {
-            if (XMLHttpR.readyState == 4 && XMLHttpR.status == 200) {
-                document.write(XMLHttpR.responseText);
-            }
-        }
-    </script>
-
-</head>
-
-<body>
-    <iframe id="frame3d" name="frame3d" frameborder="0" width="100%" scrolling="auto" style="margin-top: -4px;" onload="this.style.height=document.body.clientHeight-84"
-        height="100%" src="http://120.77.85.108/blog/" mce_src="http://120.77.85.108/blog/">
-
-    </iframe>
-</body>
-
+    <head>
+        <meta http-equiv="refresh" content="0;url=http://120.77.85.108/blog/">   
+    </head>
+    <body>
+        
+    </body>
 
 </html>
